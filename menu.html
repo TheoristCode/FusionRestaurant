@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fusion Restaurant - Menú</title>
+  <link rel="stylesheet" href="assets/css/inde.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/inde.css">
+  <style>
+    body {
+      padding-top: 80px;
+      background: url('assets/img/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: white;
+      overflow-x: hidden;
+    }
+  
+    .background-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.75); /* MÁS oscuro */
+      backdrop-filter: blur(3px); /* Blur difuminado */
+      z-index: -1;
+    }
+  
+    .menu-header {
+      text-align: center;
+      padding: 120px 20px 60px 20px;
+    }
+  
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      background-color: rgba(255, 255, 255, 0.9);
+      color: black;
+      transition: transform 0.3s;
+    }
+  
+    .card:hover {
+      transform: scale(1.05);
+    }
+  
+    .menu-section {
+      padding: 60px 0;
+      position: relative;
+      z-index: 1;
+    }
+  
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    .navbar.scrolled {
+      background-color: #6c757d !important;
+      transition: background-color 300ms linear;
+    }
+  </style>  
+</head>
+<body>
+    <!-- Navbar Bootstrap -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent;">
+        <div class="container">
+        <a class="navbar-brand" href="#">Fusion Restaurant</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html#bienvenida">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#especialidades">Especialidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menu">Menú</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#reserva">Reserva</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#ubicacion">Ubicación</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="menu-header">
+    <h1>Descubre Nuestro Menú</h1>
+    <p>Una fusión única de sabores peruanos y orientales</p>
+    </header>
+
+    <!-- Fondo oscuro -->
+    <div class="background-overlay"></div>
+
+    <!-- Menú Sección -->
+    <section class="menu-section container">
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <img src="assets/img/chaufa.jpg" class="card-img-top" alt="Arroz Chaufa de Mariscos">
+            <div class="card-body">
+            <h5 class="card-title">Arroz Chaufa de Mariscos</h5>
+            <p class="card-text">Arroz al wok con mariscos frescos y un toque oriental. <strong>$18</strong></p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <img src="assets/img/lomo.jpg" class="card-img-top" alt="Lomo Saltado Oriental">
+            <div class="card-body">
+            <h5 class="card-title">Lomo Saltado Oriental</h5>
+            <p class="card-text">Jugosos trozos de lomo, cebollas caramelizadas y salsa de soya. <strong>$20</strong></p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <img src="assets/img/watan.jpg" class="card-img-top" alt="Wantanes de Ají de Gallina">
+            <div class="card-body">
+            <h5 class="card-title">Wantanes de Ají de Gallina</h5>
+            <p class="card-text">Crujientes wantanes rellenos de crema de ají de gallina. <strong>$12</strong></p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <img src="assets/img/tallarin.jpg" class="card-img-top" alt="Tallarín Saltado Especial">
+            <div class="card-body">
+            <h5 class="card-title">Tallarín Saltado Especial</h5>
+            <p class="card-text">Fideos al wok con verduras crocantes y carne al estilo chifa. <strong>$17</strong></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #f8f9fa; color: #333; padding: 40px 0; text-align: center; margin-top: 50px;">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+            <h5 style="font-weight: bold;">Fusión Oriental</h5>
+            <p>El mejor sabor donde Perú y Oriente se encuentran.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+            <h5 style="font-weight: bold;">Redes Sociales</h5>
+            <a href="#" class="text-dark me-2">Instagram</a> |
+            <a href="#" class="text-dark me-2">Facebook</a> |
+            </div>
+            <div class="col-md-4 mb-3">
+            <h5 style="font-weight: bold;">Contáctanos</h5>
+            <p>📞 +56 9 1234 5678</p>
+            <p>✉️ contacto@FusionRestaurant.com</p>
+            </div>
+        </div>
+        <hr style="border-top: 1px solid #ccc;">
+        <p class="mt-3 mb-0">© 2025 Fusion Restaurant. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+    // Navbar cambia al hacer scroll
+    window.addEventListener('scroll', function() {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+    });
+    </script>
+</body>
+</html>

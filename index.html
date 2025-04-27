@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Restaurant - Chifa Peruano!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/inde.css">
+</head>
+<body>
+    <!-- Navbar Bootstrap -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent;">
+        <div class="container">
+          <a class="navbar-brand" href="#">Fusion Restaurant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#bienvenida">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#especialidades">Especialidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reserva">Reserva</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ubicacion">Ubicación</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+        
+    <!-- Hero Principal con fondo -->
+    <header class="hero-principal d-flex align-items-center justify-content-center text-white text-center">
+        <div>
+        <h1>Fusion Restaurant</h1>
+        <p>El sabor donde Oriente y Perú se encuentran</p>
+            <div>
+                <a href="#menu" class="boton">Ver Menú</a>
+                <a href="#reserva" class="boton">Reservar Mesa</a>
+            </div>
+        </div>
+  </header>
+
+    <!-- Bienvenida -->
+    <section id="bienvenida" style="padding: 50px; text-align: center;">
+        <h2>Bienvenido a Fusión Oriental</h2>
+        <p>Una fusión vibrante entre la milenaria cocina cantonesa y el corazón peruano. Descubre una experiencia única que celebra los sabores que nos unen.</p>
+        <img src="assets/img/fondo.jpg" alt="Chef preparando comida" style="width: 300px; border-radius: 10px;">
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" style="padding: 50px; background-color: #f9f9f9;">
+        <h2>Nuestras Especialidades</h2>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div class="plato">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Arroz Chaufa de Mariscos" style="width: 200px;">
+                <h3>Arroz Chaufa de Mariscos</h3>
+                <p>Arroz salteado al wok con mariscos frescos y toques orientales.</p>
+              </div>
+              
+              <div class="plato">
+                <img src="assets/img/lomo.jpg" alt="Lomo Saltado Oriental" style="width: 200px;">
+                <h3>Lomo Saltado Oriental</h3>
+                <p>Corte jugoso de lomo, cebollas caramelizadas y soya.</p>
+              </div>
+              
+              <div class="plato">
+                <img src="assets/img/watan.jpg" alt="Wantanes Rellenos" style="width: 200px;">
+                <h3>Wantanes de Ají de Gallina</h3>
+                <p>Crujientes por fuera, cremosos por dentro.</p>
+              </div>
+              
+              <div class="plato">
+                <img src="assets/img/tallarin.jpg" alt="Tallarín Saltado Especial" style="width: 200px;">
+                <h3>Tallarín Saltado Especial</h3>
+                <p>Fideos al wok, verduras crocantes y carne al estilo chifa.</p>
+              </div>              
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section id="menu" style="padding: 50px; text-align: center;">
+        <h2>Conoce Nuestro Menú</h2>
+        <p>Descubre todos nuestros platos llenos de sabor y tradición.</p>
+        <a href="pages/menu.html" class="boton">Explorar Menú</a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" style="padding: 50px; background-color: #f9f9f9;">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <blockquote>
+        <p>"¡Una explosión de sabores! El mejor chifa peruano que he probado."</p>
+        <cite>- Lucía M.</cite>
+        </blockquote>
+        <blockquote>
+        <p>"Atención de primera, comida deliciosa, ¡repetiría mil veces!"</p>
+        <cite>- Carlos V.</cite>
+        </blockquote>
+    </section>
+
+    <!-- Reserva -->
+    <section id="reserva" style="padding: 50px; text-align: center;">
+        <h2>Reserva tu Mesa</h2>
+        <p>¡Te estamos esperando!</p>
+        <a href="https://wa.me/1234567890" class="boton">Reservar por WhatsApp</a>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" style="padding: 50px;">
+        <h2>Visítanos</h2>
+        <p>Av. Principal 1234, Santiago</p>
+        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #f8f9fa; color: #333; padding: 40px 0; text-align: center; margin-top: 50px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <h5 style="font-weight: bold;">Fusión Oriental</h5>
+              <p>El mejor sabor donde Perú y Oriente se encuentran.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5 style="font-weight: bold;">Redes Sociales</h5>
+              <a href="#" class="text-dark me-2">Instagram</a> |
+              <a href="#" class="text-dark me-2">Facebook</a> |
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5 style="font-weight: bold;">Contáctanos</h5>
+              <p>📞 +56 9 1234 5678</p>
+              <p>✉️ contacto@FusionRestaurant.com</p>
+            </div>
+          </div>
+          <hr style="border-top: 1px solid #ccc;">
+          <p class="mt-3 mb-0">© 2025 Fusion Restaurant. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+      
+    <!-- SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+          var navbar = document.getElementById('navbar');
+          if (window.scrollY > 50) {
+            navbar.style.backgroundColor = '#1a1a1a'; // Fondo oscuro cuando haces scroll
+          } else {
+            navbar.style.backgroundColor = 'transparent'; // Fondo transparente cuando estás arriba
+          }
+        });
+    </script>        
+</body>
+</html>
