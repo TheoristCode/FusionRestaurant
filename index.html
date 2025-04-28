@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#bienvenida">Inicio</a>
+                <a class="nav-link" href="#prin">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#especialidades">Especialidades</a>
@@ -43,7 +43,7 @@
     </nav>
         
     <!-- Hero Principal con fondo -->
-    <header class="hero-principal d-flex align-items-center justify-content-center text-white text-center">
+    <header class="hero-principal d-flex align-items-center justify-content-center text-white text-center" id="prin">
         <div>
         <h1>Fusion Restaurant</h1>
         <p>El sabor donde Oriente y Perú se encuentran</p>
@@ -156,9 +156,9 @@
         window.addEventListener('scroll', function() {
           var navbar = document.getElementById('navbar');
           if (window.scrollY > 50) {
-            navbar.style.backgroundColor = '#1a1a1a'; // Fondo oscuro cuando haces scroll
+            navbar.style.backgroundColor = '#1a1a1a';
           } else {
-            navbar.style.backgroundColor = 'transparent'; // Fondo transparente cuando estás arriba
+            navbar.style.backgroundColor = 'transparent';
           }
         });
     </script>        
